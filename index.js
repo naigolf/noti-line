@@ -15,16 +15,12 @@ app.listen(app.get('port'), function() {
 
 
 app.get('/', (req, res) => {
-res.end("Ex : server_name/token/msg")
+res.end("Ex : https://noti-line.herokuapp.com/[token]/[msg]")
 })	
 
 
 app.get('/:token/:msg', (req, res) => {
  
-	
-//const msg = "test123456";
-//const token = "x9WCqHKRMf6ibDhSadU3bHfqTP7UYwgdNXuJbq0pJBO";
-
   request({
      method: 'POST',
      uri: 'https://notify-api.line.me/api/notify',
