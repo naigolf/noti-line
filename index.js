@@ -33,7 +33,7 @@ app.get('/:token/:msg', (req, res) => {
        message:  req.params.msg ,
     }
   }, (err,httpResponse,body) => {
-     console.log("token" + req.params.token + "---" + req.params.msg);
+     console.log("OK");
   })
 
 
