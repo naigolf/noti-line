@@ -15,7 +15,7 @@ app.listen(app.get('port'), function() {
 
 
 app.get('/', (req, res) => {
-res.end("Ex : https://noti-line.herokuapp.com/[token]/[msg]")
+res.end("Ex. noti-line.herokuapp.com/[token]/[msg]")
 })	
 
 
